@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Notas_app.Views.Principal" IsPresented="True">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <StackLayout>
+                <Image Source="esqueci2" HorizontalOptions="Center"/>
+                <Label Text="Esqueci" FontSize="Large" HorizontalOptions="Center" Margin="0,0,0,50"/>
+                
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="info2"/>
+                    <Button x:Name="botao_home" Text="Home" HorizontalOptions="FillAndExpand" Clicked="botao_home_Clicked"/>
+                    
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="inserir"/>
+                    <Button x:Name="botao_cadastrar" Text="Cadastrar" HorizontalOptions="FillAndExpand" Clicked="botao_cadastrar_Clicked"/>
+                    
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="localizar"/>
+                    <Button x:Name="botao_localizar" Text="Localizar" HorizontalOptions="FillAndExpand" Clicked="botao_localizar_Clicked"/>
+                    
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="info"/>
+                    <Button x:Name="botao_sobre" Text="Sobre" HorizontalOptions="FillAndExpand" Clicked="botao_sobre_Clicked"/>
+
+                </StackLayout>
+
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <ContentPage Title="Página Principal">
+            <Label x:Name="teste_DataBase" Text="Testar"/>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
